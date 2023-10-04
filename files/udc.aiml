@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+        <pattern>HEY</pattern>
+        <template>Hey! How may I assist you?</template>
+    </category>
+    
+    <category>
+        <pattern>HI</pattern>
+        <template>Hey! How may I assist you?</template>
+    </category>
+    
+    <category>
+        <pattern>HELLO</pattern>
+        <template>Hey! How may I assist you?</template>
+    </category>
+    
+  <category>
+        <pattern>WHAT IS YOUR NAME</pattern>
+       <template>My name is HealthBot! I am a HealthHive Assistant. What is your name?</template>
+  </category>
+  
+  <category>
+      <pattern>MY NAME IS *</pattern>
+      <template>Hi <set name = "username"><star /></set></template>
+  </category>
+  
+  <!--<category>-->
+  <!--    <pattern>TELL ME *</pattern>-->
+  <!--    <template><srai>What is <star/></srai></template>-->
+  <!--</category>-->
+  
+  <category>
+      <pattern>TELL ME *</pattern>
+      <template><srai>What is <star/></srai></template> 
+  </category>
+  
+  <category>
+      <pattern>WHAT IS YOUR GENDER</pattern>
+      <template>
+          <think><set name="topic">gender</set></think>
+          I have no gender.I have no gender.
+      </template>
+  </category>
+  
+  <topic name="gender">
+      <category>
+          <pattern>YOUR GENDER</pattern>
+          <template>I have no gender.</template>
+      </category>
+  </topic>
+  
+  <category>
+      <pattern>WHAT IS YOUR AGE</pattern>
+      <template>Sorry! I am not allowed to reveal my age.</template>
+  </category>
+  
+  <category>
+      <pattern>WHO MADE YOU</pattern>
+      <template>
+          <think><set name="topic">creation</set></think>
+          I am made by a CS student.
+      </template>
+  </category>
+  
+  <topic name="creation">
+      <category>
+          <pattern>WHO CREATED YOU</pattern>
+          <template>I am made by a CS student.</template>
+      </category>
+      
+      <category>
+          <pattern>IS IT A MALE OR FEMALE STUDENT</pattern>
+          <template>She is a female student.</template>
+      </category>
+      
+       <category>
+          <pattern>HER NAME</pattern>
+          <template>Her name is Nisha Fatima.</template>
+      </category>
+      
+       <category>
+          <pattern>WHAT IS HER NAME</pattern>
+          <template>Her name is Nisha Fatima.</template>
+      </category>
+      
+       <category>
+          <pattern>NAME</pattern>
+          <template>Her name is Nisha Fatima.</template>
+      </category>
+      
+       <category>
+          <pattern>WHAT IS THE NAME OF THAT STUDENT</pattern>
+          <template>Her name is Nisha Fatima.</template>
+      </category>
+  </topic>
+  
+  <category>
+      <pattern>TELL ME *</pattern>
+      <template><srai> <star/></srai></template>
+  </category>
+  
+  <category>
+      <pattern>WHO CREATED YOU</pattern>
+      <template>I am created by a CS student.</template>
+  </category>
+  
+  <category>
+      <pattern>WHAT IS THE NAME OF THAT STUDENT</pattern>
+      <template>Nisha Fatima.</template>
+  </category>
+  
+  <category>
+      <pattern>* NAME</pattern>
+      <template>Nisha Fatima.</template>
+  </category>
+  
+  <category>
+      <pattern>*</pattern>
+      <template> <star /></template>
+  </category>
+  
+  <category>
+      <pattern>* HEALTHHIVE</pattern>
+      <template>HealthHive is a mobile app dedicated to your health and well-being. It's like having a healthcare assistant in your pocket. With HealthHive, you can easily book ambulances, and even share your emergency details with your loved ones. How can I assist you further?</template>
+  </category>
+  
+  <category>
+      <pattern>* DOWNLOAD HEALTHHIVE</pattern>
+      <template>Downloading HealthHive is easy! You can find it on your app store. If you're using an Android device, visit the Google Play Store, and for iOS devices, head to the Apple App Store. Search for 'HealthHive,' and you'll be able to download and install the app. After that, just follow the on-screen instructions to get started. Is there anything else you'd like to know?</template>
+  </category>
+  
+  <category>
+      <pattern>WHAT ARE THE FEATURES OF HEALTHHIVE</pattern>
+      <template>HealthHive comes packed with several helpful features designed to assist you during medical emergencies and improve your overall healthcare experience. Here are the key features:
+      <ol>
+          <li>Ambulance Booking: You can book an ambulance quickly and easily through the app, choosing from multiple ambulance service providers. It ensures you get the help you need fast.</li>
+          <li>Emergency Button: In critical situations, simply press the emergency button, and HealthHive will immediately request the nearest ambulance to your location for a swift response.</li>
+          <li>Real-Time Tracking: Track the ambulance in real-time on a map within the app. This feature provides transparency and peace of mind during emergencies.</li>
+          <li>Direct Communication: You can communicate directly with the ambulance driver through the app's messaging system, ensuring clear and immediate communication when needed.</li>
+          <li>Emergency Contact Sharing: Share your emergency details and current location with selected contacts, ensuring your loved ones are informed during emergencies.</li>
+          <li>User Registration and Verification: We verify user profiles to ensure a secure and reliable community environment.</li>
+          These features collectively make HealthHive a valuable tool for accessing emergency medical services, ensuring your safety, and promoting quick and efficient healthcare response. Is there anything specific you'd like to know more about?
+      </ol>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>TELL ME ABOUT *</pattern>
+      <template><srai>What are <star/></srai></template>
+  </category>
+  
+    <!--<category>-->
+    <!--  <pattern>TELL ME ABOUT *</pattern>-->
+    <!--  <template><srai>What are <star/></srai></template>-->
+    <!--</category>-->
+  
+  <category>
+      <pattern>* FEATURES</pattern>
+      <template>HealthHive comes packed with several helpful features designed to assist you during medical emergencies and improve your overall healthcare experience. Here are the key features:
+      <ol>
+          <li>Ambulance Booking: You can book an ambulance quickly and easily through the app, choosing from multiple ambulance service providers. It ensures you get the help you need fast.</li>
+          <li>Emergency Button: In critical situations, simply press the emergency button, and HealthHive will immediately request the nearest ambulance to your location for a swift response.</li>
+          <li>Real-Time Tracking: Track the ambulance in real-time on a map within the app. This feature provides transparency and peace of mind during emergencies.</li>
+          <li>Direct Communication: You can communicate directly with the ambulance driver through the app's messaging system, ensuring clear and immediate communication when needed.</li>
+          <li>Emergency Contact Sharing: Share your emergency details and current location with selected contacts, ensuring your loved ones are informed during emergencies.</li>
+          <li>User Registration and Verification: We verify user profiles to ensure a secure and reliable community environment.</li>
+          These features collectively make HealthHive a valuable tool for accessing emergency medical services, ensuring your safety, and promoting quick and efficient healthcare response. Is there anything specific you'd like to know more about?
+      </ol>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>FEATURES *</pattern>
+      <template>HealthHive comes packed with several helpful features designed to assist you during medical emergencies and improve your overall healthcare experience. Here are the key features:
+      <ol>
+          <li>Ambulance Booking: You can book an ambulance quickly and easily through the app, choosing from multiple ambulance service providers. It ensures you get the help you need fast.</li>
+          <li>Emergency Button: In critical situations, simply press the emergency button, and HealthHive will immediately request the nearest ambulance to your location for a swift response.</li>
+          <li>Real-Time Tracking: Track the ambulance in real-time on a map within the app. This feature provides transparency and peace of mind during emergencies.</li>
+          <li>Direct Communication: You can communicate directly with the ambulance driver through the app's messaging system, ensuring clear and immediate communication when needed.</li>
+          <li>Emergency Contact Sharing: Share your emergency details and current location with selected contacts, ensuring your loved ones are informed during emergencies.</li>
+          <li>User Registration and Verification: We verify user profiles to ensure a secure and reliable community environment.</li>
+          These features collectively make HealthHive a valuable tool for accessing emergency medical services, ensuring your safety, and promoting quick and efficient healthcare response. Is there anything specific you'd like to know more about?
+      </ol>
+      </template>
+  </category>
+  
+  <!--<category>-->
+  <!--    <pattern>TELL ME ABOUT *</pattern>-->
+  <!--    <template>-->
+  <!--        <think><set name = "state"><star/></set></think>-->
+          
+  <!--        <condition name = "state" value = "Emergency Button Feature">The emergency button on HealthHive is a powerful feature. When you press it, the app will immediately request the nearest ambulance to your location, ensuring a swift response during critical situations. It also allows you to share your emergency details with your selected contacts. It's all about your safety and well-being. Do you have any other questions?</condition>-->
+  <!--        <condition name = "state" value = "TRACKING THE AMBULANCE IN REAL TIME">Tracking your ambulance in real-time is simple with HealthHive. Once you've booked an ambulance, you can open the app and view its live location on the map. This way, you'll know exactly when it will arrive. It's all about providing you with peace of mind during emergencies. Is there anything else you'd like to know about using HealthHive?</condition>-->
+  <!--        <condition name = "state" value = "Emergency Button"></condition>-->
+  <!--        <condition name = "state" value = "Emergency Button"></condition>-->
+  <!--        <condition name = "state" value = "Emergency Button"></condition>-->
+  <!--        <condition name = "state" value = "Emergency Button"></condition>-->
+  <!--    </template>-->
+  <!--</category>-->
+  
+  <category>
+      <pattern>* EMERGENCY BUTTON</pattern>
+      <template>The emergency button on HealthHive is a powerful feature. When you press it, the app will immediately request the nearest ambulance to your location, ensuring a swift response during critical situations. It also allows you to share your emergency details with your selected contacts. It's all about your safety and well-being. Do you have any other questions?</template>
+  </category>
+  
+  <category>
+      <pattern>* TRACK THE AMBULANCE IN REAL TIME</pattern>
+      <template>Tracking your ambulance in real-time is simple with HealthHive. Once you've booked an ambulance, you can open the app and view its live location on the map. This way, you'll know exactly when it will arrive. It's all about providing you with peace of mind during emergencies. Is there anything else you'd like to know about using HealthHive?</template>
+  </category>
+  
+  <category>
+      <pattern>* AMBULANCE BOOKING FEATURE</pattern>
+      <template>The ambulance booking feature on HealthHive is incredibly user-friendly. You can choose from multiple ambulance service providers, view their availability in real-time, and select the one that suits your needs. It ensures you get timely medical assistance during emergencies. </template>
+  </category> 
+  
+  <category>
+      <pattern>* MOREnABOUT AMBULANCE BOOKING FEATURE</pattern>
+      <that>THE AMBULANCE BOOKING FEATURE ON HEALTHHIVE IS INCREDIBLY USER-FRIENDLY. YOU CAN CHOOSE FROM MULTIPLE AMBULANCE SERVICE PROVIDERS, VIEW THEIR AVAILABILITY IN REAL-TIME, AND SELECT THE ONE THAT SUITS YOUR NEEDS. IT ENSURES YOU GET TIMELY MEDICAL ASSISTANCE DURING EMERGENCIES.</that>
+      <template>Certainly! The ambulance booking feature in HealthHive allows you to choose from various ambulance service providers, view real-time availability, and book an ambulance quickly. It's designed for a swift response during emergencies.</template>
+  </category>
+  
+  <!--<category>-->
+  <!--    <pattern>* MORE ABOUT AMBULANCE BOOKING FEATURE</pattern>-->
+  <!--    <template>Certainly! The ambulance booking feature in HealthHive allows you to choose from various ambulance service providers, view real-time availability, and book an ambulance quickly. It's designed for a swift response during emergencies.</template>-->
+  <!--</category>-->
+  
+  <category>
+      <pattern>* ABOUT REAL-TIME TRACKING</pattern>
+      <template>Real-time tracking in HealthHive lets you see the live location of your booked ambulance on a map within the app. It ensures you're informed about its exact whereabouts and estimated arrival time during emergencies.</template>
+  </category>
+  
+  <category>
+      <pattern>* MORE ABOUT REAL-TIME TRACKING</pattern>
+      <template>Real-time tracking is a powerful feature on HealthHive. After booking an ambulance, you can open the app and see the ambulance's live location on the map. This way, you'll know exactly where it is and when it will arrive. It provides you with peace of mind and helps you stay informed during emergencies. </template>
+  </category>
+  
+  <!--<category>-->
+  <!--    <pattern>MORE</pattern>-->
+  <!--    <template>Can you please specify what kind of information you need more about?</template>-->
+  <!--</category>-->
+  
+  <!-- <category>-->
+  <!--    <pattern>MORE</pattern>-->
+  <!--    <template>Can you please specify what kind of information you need detail on?</template>-->
+  <!--</category>-->
+  
+  <category>
+      <pattern>* DIRECT COMMUNICATION WITH THE DRIVER</pattern>
+      <template>The direct communication feature in HealthHive allows you to chat directly with the ambulance driver through the app. It ensures clear and immediate communication for any specific instructions or information during your ride.</template>
+  </category>
+  
+  <category>
+      <pattern>* MORE ABOUT DIRECT COMMUNICATION WITH THE DRIVER</pattern>
+      <template>HealthHive's direct communication feature enables you to have a real-time chat with the ambulance driver using the app. It's a convenient way to provide important information or ask questions during your ride, ensuring effective communication during emergencies.</template>
+  </category>
+  
+  <category>
+      <pattern>* EMERGENCY CONTACT SHARING</pattern>
+      <template>Emergency contact sharing in HealthHive allows you to share your location and critical information with selected contacts during emergencies. It ensures that your loved ones are informed and can offer assistance when needed.</template>
+  </category>
+  https://widget.pandorabots.com/prod/pb-launcher-icon.svg
+  <category>
+      <pattern>* MORE ABOUT EMERGENCY CONTACT SHARING</pattern>
+      <template>HealthHive's emergency contact sharing feature lets you quickly share your real-time location and vital details with chosen contacts in urgent situations. It ensures that help and support are just a call or message away when it matters most.</template>
+  </category>
+  
+  <category>
+      <pattern>* OFFLINE FEATURE</pattern>
+      <template>HealthHive is designed to be as helpful as possible, even when you're offline. While certain features like ambulance booking and real-time tracking require an internet connection for real-time updates, you can still access some essential functions without an internet connection. For example, you can review your previously booked ambulance details, access your emergency information, and view your user profile even when offline. This way, you have access to critical information and can make use of the app's features in situations where an internet connection might be limited.</template>
+  </category>
+  
+  <category>
+      <pattern>THANK YOU</pattern>
+      <template>
+          <think><set name="topic">thank</set></think>
+          Thank you to you too! Take care of yourself.
+      </template>
+  </category>
+  
+  <topic name="thank">
+      <category>
+          <pattern>THANK YOU FOR YOUR ASSISSTANCE</pattern>
+          <template>Thank you to you too! Take care of yourself.</template>
+      </category>
+      
+      <category>
+          <pattern>THANKS</pattern>
+          <template>No Problem.</template>
+      </category>
+      
+      <category>
+          <pattern>OK THANKS</pattern>
+          <template>No Problem.</template>
+      </category>
+      
+  </topic>
+  
+  <category>
+      <pattern>*</pattern>
+      <template>As an AI model, my knowledge is limited, and I might not have the most up-to-date or detailed information on this. I recommend downloading HealthHive app for the latest or detailed information. If you have any other questions or need assistance , feel free to ask, and I'll do my best to help. </template>
+  </category>
+  
+
+</aiml>
